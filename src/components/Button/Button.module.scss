@@ -1,0 +1,67 @@
+@import "../../styles/variables.scss";
+
+.button {
+    background: $pink;
+    border: 1px solid $pink;
+    border-radius: 8px;
+    font-size: $text-size-lg;
+    color: $text-white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    cursor: pointer;
+    transition: .1s all ease-in-out;
+
+    svg {
+        height: 25px;
+        width: 25px;
+    }
+
+    &:hover:not(&.disabled) {
+        background: transparent;
+        transition: .1s all ease-in-out;
+
+        &.icon {
+            background: rgba($color: #585858ea, $alpha: 0.2);
+        }
+    }
+
+    &.full {
+        width: 100%;
+    }
+
+    &.disabled {
+        opacity: 0.4;
+        pointer-events: none;
+        cursor: default;
+    }
+
+    &.icon {
+        padding: 5px;
+        border: none;
+        background: transparent;
+        height: fit-content;
+
+        svg {
+            height: 20px;
+            width: 20px;
+        }
+
+    }
+
+    &.success {
+        background: $success;
+        border-color: $text-success;
+        color: $text-success;
+        text-transform: uppercase;
+    }
+
+    &.error {
+        background: $error;
+        border-color: $text-error;
+        color: $text-error;
+        text-transform: uppercase;
+    }
+}

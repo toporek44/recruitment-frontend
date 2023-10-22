@@ -1,0 +1,40 @@
+@import "../../styles/variables";
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @media(min-width:$tablet) {
+        padding: 80px;
+    }
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+
+    @media(min-width: $tablet) {
+        flex-direction: row;
+    }
+}
+
+.header-title {
+    font-size: $text-size-lg;
+    font-weight: $text-bold;
+    text-align: center;
+
+    @media(min-width: $tablet) {
+        font-size: $text-size-xl;
+        text-align: left;
+    }
+}
+
+.highlight {
+    color: $pink;
+}

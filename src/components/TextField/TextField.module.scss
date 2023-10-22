@@ -1,0 +1,46 @@
+@import "../../styles/variables.scss";
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.label {
+    font-size: $text-size-lg;
+
+    &::first-letter {
+        text-transform: uppercase;
+    }
+}
+
+
+.field {
+    resize: none;
+    padding: 10px 7px;
+    border-radius: 5px;
+    background: #202020;
+    border: 1px solid $pink;
+    color: $text-white;
+    transition: .1s all ease;
+    font-size: $text-size-md;
+
+    &:focus {
+        transition: .1s all ease;
+        outline: none;
+        border-color: $white;
+    }
+}
+
+.textarea {
+    height: 120px;
+}
+
+.error {
+    color: $text-error;
+    position: absolute;
+    bottom: -37px;
+    right: 0;
+}

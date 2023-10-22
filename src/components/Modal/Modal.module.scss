@@ -1,0 +1,57 @@
+@import "../../styles/variables.scss";
+
+.modal {
+    position: fixed;
+    min-width: 320px;
+    background: $background;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: 3;
+    border-radius: 7px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media(min-width: $mobile) {
+        max-width: 400px;
+        height: fit-content;
+    }
+
+    @media(min-width: $tablet) {
+        max-width: 600px;
+    }
+}
+
+.close {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.header {
+    padding: 20px;
+    font-size: $text-size-lg;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    gap: 20px;
+}
+
+.content {
+    font-size: $text-size-md;
+    padding: 0 20px 20px;
+}
+
+.backdrop {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: rgba($color: #000000, $alpha: 0.7);
+    z-index: 2;
+}

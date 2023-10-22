@@ -1,34 +1,56 @@
-# Zadanie rekrutacyjne
+# Avalio Recruitment Task
 
-**Cel:**
-Stworzenie prostego interfejsu użytkownika do zarządzania listą zadań (to-do) z wykorzystaniem React, SCSS, Redux oraz kreatywnego myślenia w kontekście UX/UI.
+To see a preview checkout the demo:
 
-## Specyfikacja:
-1. **Stworzenie nowego projektu z wykorzystaniem Create React App.**
-2. **Interfejs:**
-    - Strona główna powinna zawierać listę zadań oraz pole do dodawania nowych zadań.
-    - Każde zadanie powinno zawierać tekst oraz przycisk do jego usunięcia.
-    - Powinna być możliwość oznaczenia zadania jako "zrobione", co powoduje przesunięcie go na dół listy i zmianę jego wyglądu (np. przekreślenie).
-    - Wykorzystaj SCSS (css modules) do stworzenia stylów strony. Zachęcamy do kreatywnego podejścia i stworzenia atrakcyjnego, intuicyjnego interfejsu.
+[Demo](https://0fc0c00c-570d-4118-ae44-e50693ce7fac.vercel.app/)
 
-3. **Stan aplikacji:**
-    - Użyj Redux do zarządzania stanem aplikacji. Stan powinien zawierać listę zadań oraz informacje o tym, czy dane zadanie zostało wykonane.
+![Alt text](image.png)
 
-4. **Dodatkowe punkty za:**
-    - Responsywność – aplikacja powinna wyglądać dobrze zarówno na komputerach, jak i urządzeniach mobilnych.
-    - Stworzenie prostego testu jednostkowego do jednego z komponentów.
-    - Optymalizacja wydajności oraz dbanie o czystość kodu.
+## Prerequisites
 
-## Instrukcje:
-1. Utwórz fork repozytorium udostępnionego przez nas na GitHub [pod tym linkiem](https://github.com/Dentametr/recruitment-frontend).
-2. Po zakończeniu zadania, wyślij link do Twojego forka na adres: info@avalio.io.
-3. Upewnij się, że zawarłeś/aś wszystkie niezbędne instrukcje w README, abyśmy mogli uruchomić Twoją aplikację lokalnie (możesz nadpisać ten plik).
+Make sure you have the following software installed on your machine:
 
-## Ocenianie:
-Przy ocenie będziemy zwracać uwagę na:
-- Jakość kodu (czystość, struktura).
-- Wykorzystanie technologii (React, Redux, SCSS).
-- Kreatywność w kontekście UX/UI.
-- Responsywność oraz ogólną funkcjonalność aplikacji.
+- [Node.js](https://nodejs.org/) (v16 or higher)
+- [Yarn](https://yarnpkg.com/)
 
-**Powodzenia!** 
+## Getting Started
+
+1. **Clone the Repository:**
+
+   ```sh
+   git clone git@github.com:toporek44/recruitment-frontend.git
+   cd recruitment-frontend
+   ```
+
+   Install Dependencies:
+
+   ```bash
+   yarn install
+   ```
+
+   Running the Vite Project
+   To run the Vite project locally, use the following command:
+
+   ```bash
+   yarn dev
+   ```
+
+This will start the development server. Open your browser and navigate to http://127.0.0.1:5173/ to view the project.
+
+Running Tests
+This project uses Jest for running tests. To execute the tests, use the following command:
+
+```sh
+yarn test
+```
+
+This command will run all the tests in the project and display the results in the terminal.
+
+# React + TypeScript + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
